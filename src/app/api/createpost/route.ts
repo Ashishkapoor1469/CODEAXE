@@ -5,5 +5,6 @@ import { NextRequest } from "next/server";
 
 export async function POST(req:NextRequest){
     dbconnect();
-    const {} = await req.json();
+    const {Imgurl,userId,username,discription,likes,comments,} = await req.json();
+    
 }
