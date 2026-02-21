@@ -3,7 +3,6 @@ type connectionType = {
   isConnected?: number;
 };
 const connection: connectionType = {};
-
 export async function dbconnect(): Promise<void> {
   if (connection.isConnected) {
     console.log("Already connected to the database");
